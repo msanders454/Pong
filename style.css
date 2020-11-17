@@ -1,0 +1,78 @@
+body {
+  background-color: rgb(214, 209, 209);
+}
+
+.player, .computer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  color: rgb(31, 0, 0)(54, 4, 4);
+}
+
+.player{
+  position: relative;
+  width: 15%;
+  left: 2%;
+}
+
+.computer{
+  position: relative;
+  width: 15%;
+  bottom: 210px;
+  left: 78%;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 106px;
+  bottom: 8px;
+  left: 0;
+  box-shadow: 0 0 36px rgba(0, 0, 0, 0.25);
+}
+
+.controls button{
+  background-color:#8381f1;
+  height: 50px;
+  width: 150px;
+  font-size: 30px;
+  border: 2px solid #000000;
+  border-color: navy;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.difficulty{
+  position: absolute;
+  right: 106px;
+}
+
+#difficulty{
+  background-color:#8381f1;
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
+  border: 2px solid #000000;
+  border-color: navy;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#difficulty:hover, button:hover{
+  background-color: orange;
+}
+
+#demo{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  width: 25%;
+}
+

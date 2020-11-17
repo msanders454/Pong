@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css"
+        type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Pong</title>
+</head>
+
+<body>
+    
+    <div class="player">
+        <h2>Player</h2>
+        <p id="playerSc">0</p>
+    </div>
+    <div class="computer">   
+        <h2>Computer</h2>
+        <p id="computerSc">0</p>
+    </div>  
+
+    <div class="controls">
+
+        <button onclick="reset()">Reset</button>
+
+    </div>
+    <div class="difficulty">
+        <button id="difficulty" onclick="difficultyE()">Easy</button>
+        <button id="difficulty" onclick="difficultyN()">Normal</button>
+        <button id="difficulty" onclick="difficultyH()">Hard</button>
+        
+    </div> 
+    <p id="demo"></p>     
+
+<script src="pong.js"></script>
+
+</body>
+</html>
