@@ -25,8 +25,8 @@ var render = function () {
 context.fillStyle = "#33ff33";
 context.fillRect(0, 0, width, height);
 context.beginPath();
-context.moveTo(600, 350);
-context.lineTo(0, 350);
+context.moveTo(300, 250);
+context.lineTo(0, 250);
 context.stroke();
 player.render();
 computer.render();
@@ -76,8 +76,8 @@ this.y_speed = y;
 if (this.x < 0) {
   this.x = 0;
   this.x_speed = 0;
-} else if (this.x + this.width > 600) {
-  this.x = 600 - this.width;
+} else if (this.x + this.width > 400) {
+  this.x = 400 - this.width;
   this.x_speed = 0;
 }
 };
