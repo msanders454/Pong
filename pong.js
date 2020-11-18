@@ -3,14 +3,14 @@ var animate = window.requestAnimationFrame || window.webkitRequestAnimationFrame
 };
 var canvas = document.createElement("canvas");
 
-var width = 600;
-var height = 700;
+var width = 400;
+var height = 500;
 canvas.width = width;
 canvas.height = height;
 var context = canvas.getContext('2d');
 var player = new Player();
 var computer = new Computer();
-var ball = new Ball(300, 350);
+var ball = new Ball(200, 250);
 var scorePlayer = 0;
 var scoreComputer = 0;
 var difficulty = 1;
