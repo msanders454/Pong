@@ -4,7 +4,7 @@ body {
 
 .player, .computer {
   font-family: 'Roboto', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   color: rgb(31, 0, 0)(54, 4, 4);
 }
 
@@ -17,7 +17,7 @@ body {
 .computer{
   position: relative;
   width: 15%;
-  bottom: 210px;
+  bottom: 170px;
   left: 78%;
 }
 
@@ -49,7 +49,7 @@ canvas {
 
 .difficulty{
   position: absolute;
-  right: 106px;
+  right: 5px;
 }
 
 #difficulty{
