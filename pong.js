@@ -25,7 +25,7 @@ var render = function () {
 context.fillStyle = "#33ff33";
 context.fillRect(0, 0, width, height);
 context.beginPath();
-context.moveTo(300, 250);
+context.moveTo(400, 250);
 context.lineTo(0, 250);
 context.stroke();
 player.render();
@@ -105,7 +105,7 @@ function difficultyH() {
 }
 
 function Computer() {
-this.paddle = new Paddle(175, 10, 50, 10);
+this.paddle = new Paddle(175, 10, 45, 10);
 }
 
 Computer.prototype.render = function () {
@@ -138,13 +138,13 @@ if (difficulty == 1){
 this.paddle.move(diff, 0);
 if (this.paddle.x < 0) {
   this.paddle.x = 0;
-} else if (this.paddle.x + this.paddle.width > 600) {
-  this.paddle.x = 600 - this.paddle.width;
+} else if (this.paddle.x + this.paddle.width > 400) {
+  this.paddle.x = 400 - this.paddle.width;
 }
 };
 
 function Player() {
-this.paddle = new Paddle(270, 680, 50, 10);
+this.paddle = new Paddle(270, 480, 45, 10);
 }
 
 Player.prototype.render = function () {
@@ -192,8 +192,8 @@ if (this.x - 5 < 0) {
   this.x = 5;
   this.x_speed = -this.x_speed;
  
-} else if (this.x + 5 > 600) {
-  this.x = 590;
+} else if (this.x + 5 > 400) {
+  this.x = 390;
   this.x_speed = -this.x_speed;
 
 }
@@ -215,13 +215,13 @@ if (this.y < 0) {
   } else{
     myHooray.play();
   }
-} else if(this.y > 700){
+} else if(this.y > 500){
   this.x_speed = Math.floor(Math.random()*5) + 1;
   this.x_speed *= Math.floor(Math.random()*2) == 1 ? 1 : -1; 
   this.y_speed = Math.floor(Math.random()*5) + 1;
   this.y_speed *= Math.floor(Math.random()*2) == 1 ? 1 : -1; 
-  this.x = 300;
-  this.y = 350;
+  this.x = 200;
+  this.y = 250;
   scoreComputer++;
   computerScore(scoreComputer);
   if (scoreComputer > 6) {
