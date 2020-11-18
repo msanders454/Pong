@@ -12,7 +12,7 @@ Users can play against the Computer for a first to 7. If they find the CPU easy,
 
 ## Live Site
 
-You can find the live app here at https://pong-umber.vercel.app/
+You can find the live app here at [Live Page](https://pong-umber.vercel.app/)
 
 ## Technical
 
